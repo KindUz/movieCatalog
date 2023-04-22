@@ -133,10 +133,12 @@ let apiSearchUrl = null;
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    apiSearchUrl = `${API_URL_SEARCH}${search.value}`;
+    
     if (search.value) {
         currentPage = 1;
         search_flag = true;
+        apiSearchUrl = `${API_URL_SEARCH}${search.value}`+"&page=";
+        console.log(apiSearchUrl);
         bestMovies.classList.remove("active");
         awaitMovies.classList.remove("active");
         popularMovies.classList.remove("active");
@@ -287,7 +289,6 @@ function handlePrevClick() {
 
     if (search_flag === true) {
         console.log(currentPage);
-        console.log(apiSearchUrl);
         getMovies(apiSearchUrl, currentPage);
     }
 
