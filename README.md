@@ -1,4 +1,7 @@
 # movieCatalog
+
+#### beta url - https://kinduz.github.io/movieCatalog/
+
 This project was made to consolidate work with the API. The site is made on pure js, without the use of additional libraries and frameworks.
 
 This project uses the unofficial API of Kinopoisk - https://kinopoiskapiunofficial.tech/
