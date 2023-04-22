@@ -385,17 +385,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 26px;
   color: #FFF;
   background-color: transparent;
+  transition: all 0.3s;
 }
-
-.prev, .next {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 5px;
-       column-gap: 5px;
-}
-
-.prev-arrow, .next-arrow {
-  font-size: 26px;
-  color: #FFF;
+.prev-btn:hover, .next-btn:hover {
+  color: rgb(245, 161, 26);
 }/*# sourceMappingURL=style.css.map */

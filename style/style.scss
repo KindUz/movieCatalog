@@ -392,28 +392,9 @@ body::-webkit-scrollbar {
     font-size: 26px;
     color: #FFF;
     background-color: transparent;
+    transition: all 0.3s;
+    &:hover {
+        color: rgb(245, 161, 26);
+    }
 }
 
-.prev, .next{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 5px;
-}
-
-.prev-arrow, .next-arrow {
-    font-size: 26px;
-    color: #FFF;
-}
-
-.pages {
-
-}
-
-.next-btn {
-
-}
-
-.content__popup {
-
-}
