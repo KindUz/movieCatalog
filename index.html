@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon">
+    <title>Movie Catalog</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__body">
+                <div class="header__logo">
+                    <a href="index.html"><span>Movie Catalog</span></a>
+                </div>
+                <div class="header__tabs">
+                    <div class="tabs__top active">
+                        <span>Топ популярных фильмов</span>
+                    </div>
+                    <div class="tabs__best">
+                        <span>Топ лучших фильмов</span>
+                    </div>
+                    <div class="tabs__await">
+                        <span>Топ ожидаемых фильмов</span>
+                    </div>
+                </div>
+                <div class="header__search-box">
+                    <form class="header__search-input">
+                        <input type="text" class="header__search" id="search" placeholder="Введите ключевые слова (жанр, название и т.д)">
+                    </form>
+                    <div class="open__input">
+                        <button class="open__search fa-solid fa-magnifying-glass"></button>
+                    </div>
+                    <div class="close__input">
+                        <button class="close__search fa-solid fa-xmark"></button>
+                    </div>
+                </div>
+                <div class="header__profile">
+                    <a href="#"><span>Авторизация</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content__container container">
+            <div class="content__movies">
+               
+            </div>
+
+            <nav class="pagination">
+                <button class="prev-btn">Previous</button>
+                <ul class="pages">
+                </ul>
+                <button class="next-btn">Next</button>
+            </nav>
+
+            <div class="content__popup">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/350329b77c.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/@ungap/custom-elements-builtin"></script>
+<script type="module" src="https://unpkg.com/x-frame-bypass"></script>
+</html>

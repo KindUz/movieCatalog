@@ -1,0 +1,419 @@
+@import url(null.css);
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+body {
+    background-color: rgb(20, 27, 48);
+    font-family: "Inter";
+}
+
+.header {
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    width: 2px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-thumb {
+    border: 1px solid #ffffff;      /* закругления плашки */
+  }
+
+.header__body {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__container{
+    padding: 20px 0;
+}
+
+.header__logo {
+    font-size: 40px;
+    transition: all 0.5s;
+    &:hover {
+        transform: rotate(5deg);
+        span {
+            transition: all 0.5s;
+            color: rgb(105, 150, 202);
+    }
+}
+    span {
+        color: #FFF;
+    }
+}
+
+.header__profile span:hover {
+    color: #ebb7b7;
+}
+
+.header__profile {
+    display: flex;
+    font-size: 20px;
+    column-gap: 20px;
+    span {
+        color: #FFF;
+        transition: all 0.2s;
+
+    }
+}
+
+.header__search-box {
+    display: flex;
+    align-items: center;
+    width: 520px;
+}
+
+
+.header__tabs {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    span {
+        font-size: 14px;
+        color: #9B9A9A;
+        cursor: pointer;
+        padding-bottom: 20px;
+        transition: all 0.3s;
+    }
+}
+
+.header__tabs span:hover {
+    color: #FFF;
+}
+
+.header__tabs .active span {
+    color: #FFF;
+}
+
+.tabs__top {
+}
+.tabs__best {
+}
+.tabs__await {
+}
+
+
+
+::placeholder {
+    color: rgb(99, 92, 92);
+    font-size: 18px;
+}
+
+.open__search, .close__search {
+    font-size: 20px;
+    background-color: inherit;
+    color: #FFF;
+}
+
+.close__input {
+    display: none;
+}
+.close__input.active {
+    display: block;
+}
+
+
+.header__search-box {
+    display: flex;
+    column-gap: 10px;
+}
+
+.header__search {
+    transition: all 0.3s;
+    height: 40px;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: start;
+    width: 500px;
+}
+
+.header__search.active {
+    opacity: 1;
+    height: 100%;
+}
+
+.content__movies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content__movie {
+    position: relative;
+    width: 240px;
+    margin: 10px;
+}
+
+.movie__cover-img {
+    position: relative;
+    height: 360px;
+}
+
+.movie__cover{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.movie__cover-hover {
+    background-color: inherit;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.movie__cover-hover:hover{
+    background-color: rgb(66, 57, 57);
+    cursor: pointer;
+
+}
+
+.movie__info {
+    padding: 10px;
+}
+
+.movie__title {
+    font-size: 18px;
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+.movie__year-genre {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+
+.movie__year, .movie__category {
+    font-size: 14px;
+    color: rgba(222, 211, 200, 0.605);
+} 
+
+.movie__category {
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.movie__average {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212a4f;
+    color: #FFF;
+    border-radius: 50%;
+}
+
+.movie__average-green {
+    border: 1px solid green;
+}
+
+.movie__average-red {
+    border: 1px solid red;
+}
+
+.movie__average-orange {
+    border: 1px solid orange;
+}
+
+.content__popup {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(32, 29, 29, 0.5);
+    color: #f0eeee;
+}
+
+.popup__img {
+    max-width: 360px;
+    max-height: 420px;
+    border-radius: 20px;
+}
+
+.modal--show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.popup__item {
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #2e2c2c;
+    border-radius: 20px;
+    max-width: 850px;
+    padding: 18px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.popup__main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;   
+}
+
+.popup__body {
+    display: flex;
+    flex-direction: column;
+    
+    row-gap: 50px;
+    h1 {
+        font-size: 40px;
+        color:rgb(131, 149, 205)
+    }
+    h2 {
+        font-size: 30px;
+        color:rgb(175, 152, 179)
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.name__movie, .desc__movie {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.movie__name {
+    font-size: 24px;
+}
+
+.popup__category {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    h3 {
+        font-size: 26px;
+        color: #cb987c;
+    }
+    .genre {
+        font-size: 18px;
+        color: #bbd0d0;
+        font-style: italic;
+    }
+}
+
+.description {
+    font-size: 16px;
+}
+
+.popup__trailer {
+  display: flex;
+  justify-content: center;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
+
+.popup__facts {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #8fdebfbc;
+    }
+}
+.popup__fact {
+
+    font-size: 16px;
+    color: #FFF;
+    a[href] {
+        color: #FFF;
+        cursor:auto;
+    }
+    
+}
+
+.popup__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .popup__button-close {
+        font-size: 20px;
+        background-color: transparent;
+        color: #FFF;
+        transition: all 0.3s;
+        &:hover {
+            color: #6bb9dd;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    padding: 20px 0;
+}
+
+.prev-btn, .next-btn {
+    font-size: 26px;
+    color: #FFF;
+    background-color: transparent;
+}
+
+.prev, .next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.prev-arrow, .next-arrow {
+    font-size: 26px;
+    color: #FFF;
+}
+
+.pages {
+
+}
+
+.next-btn {
+
+}
+
+.content__popup {
+
+}
